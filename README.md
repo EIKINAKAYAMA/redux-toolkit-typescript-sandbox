@@ -3,6 +3,9 @@
 Sample
 <img width="1227" alt="スクリーンショット 2023-06-20 20 05 58" src="https://github.com/EIKINAKAYAMA/redux-toolkit-typescript-sandbox/assets/65437818/593b7563-cc65-4476-a3a8-5ef659d407d9">
 
+LINE API REF
+https://developers.line.biz/ja/reference/liff/
+
 ### Set env 
 
 create .env.development.local file and set your LIFF ID
