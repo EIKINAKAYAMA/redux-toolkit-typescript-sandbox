@@ -6,19 +6,8 @@ export const Home =  (props: any) => {
   const {liffIdToken, displayName, pictureUrl, lineLogin, lineProfile} =
     props;
   useEffect(() => {
-    // LINE Login
-    if (!liffIdToken) {
-      // liffIdToken がReduxに取得できていない場合LINE Login画面に戻る
-      lineLogin();
-    }
-  }, [liffIdToken, lineLogin]);
-
-  useEffect(() => {
-    if (liffIdToken) {
-      // LINE Profile情報を取得
-      lineProfile();
-    }
-  }, [liffIdToken, lineProfile]);
+    liffIdToken ?  lineProfile(): lineLogin();
+  }, [liffIdToken, lineLogin, lineProfile]);
 
   return (
     <div className="App">
@@ -32,4 +21,4 @@ export const Home =  (props: any) => {
   );
 }
 
-export default Home;
+export default memo(Home);

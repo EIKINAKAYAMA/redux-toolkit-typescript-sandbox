@@ -57,7 +57,6 @@ export const getLINEProfile = createAsyncThunk<LINEProfile>(
   "auth/getLINEProfile",
   async () => {
     const lineProfile = await liff.getProfile();
-    console.log("lineProfile", lineProfile);
     if (lineProfile) {
       return lineProfile as LINEProfile;
     }
