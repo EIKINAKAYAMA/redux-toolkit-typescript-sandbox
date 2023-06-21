@@ -21,4 +21,4 @@ export const Home =  (props: any) => {
   );
 }
 
-export default memo(Home);
+export default (Home);
